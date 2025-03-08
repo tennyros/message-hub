@@ -1,0 +1,10 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: message-hub-server
+  cloud:
+    kubernetes:
+      discovery:
+        enabled: true

@@ -1,6 +1,0 @@
-[submodule "message-hub-eureka-server"]
-	path = message-hub-eureka-server
-	url = git@github.com:tennyros/message-hub-eureka-server.git
-[submodule "message-hub-auth-service"]
-	path = message-hub-auth-service
-	url = git@github.com:tennyros/message-hub-auth-service.git
