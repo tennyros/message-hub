@@ -1,0 +1,35 @@
+server:
+  port: 8180
+
+spring:
+  application:
+    name: auth-service
+
+#spring:
+#  cloud:
+#    config:
+#      enabled: false
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+  #    для запуска более одного инстанса -> ${spring.application.name}:${random.uuid}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+
+#  application:
+#    name: message-hub-auth-service
+#  profiles:
+#    active: dev
+#  data:
+#    mongodb:
+#      uri: mongodb://<username>:<password>@<host>:<port>/<database>
+#      database: <database-name>
+#      # mongodb://user:password@localhost:27017/mydatabase
+#
+#feign:
+#  circuitbreaker:
+#    enabled: true
