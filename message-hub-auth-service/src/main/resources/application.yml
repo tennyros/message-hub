@@ -1,0 +1,20 @@
+server:
+  port: 8180
+
+spring:
+  cloud:
+    config:
+      enabled: false
+  application:
+    name: message-hub-auth-service
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      uri: mongodb://<username>:<password>@<host>:<port>/<database>
+      database: <database-name>
+      # mongodb://user:password@localhost:27017/mydatabase
+
+feign:
+  circuitbreaker:
+    enabled: true
