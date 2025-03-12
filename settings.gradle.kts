@@ -1,2 +1,2 @@
 rootProject.name = "message-hub"
-include("k8s-server", "auth-service")
+include("eureka-server", "auth-service")
